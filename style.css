@@ -1,0 +1,240 @@
+:root {
+  --var-body-bg: rgb(255, 255, 255);
+  --var-body-fc: rgb(0, 0, 0);
+  --var-header-block-bg: rgba(221, 218, 218, 0.5);
+  --var-body-block-bg: rgba(225, 223, 223, 0.7);
+  --var-footer-block-bg: rgba(221, 218, 218, 0.5);
+  --var-body-bg-img: url("pic/whiteBg.jpg");
+  --radius-block: 20px;
+  --color-text-err: red;
+}
+
+[dark] {
+  --var-body-bg: rgb(0, 0, 0);
+  --var-body-fc: rgb(255, 255, 255);
+  --var-header-block-bg: rgba(30, 30, 30, 0.5);
+  --var-body-block-bg: rgba(78, 78, 78, 0.5);
+  --var-footer-block-bg: rgba(30, 30, 30, 0.5);
+  --var-body-bg-img: url("pic/blackBg.jpg");
+}
+
+.leftimg {
+  float: left;
+  /* Выравнивание по левому краю */
+  margin: 7px 7px 7px 0;
+  /* Отступы вокруг картинки */
+}
+
+.nav-link {
+  /* position: relative; */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: aliceblue;
+  border-radius: 50px;
+}
+
+.nav-link:hover {
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  border-radius: 50px;
+  /* box-shadow: 0 0 35px var(--clr); */
+  /* тени */
+  box-shadow: 0 0 10px 10px var(--clr);
+  /* тени */
+  color: aliceblue;
+}
+
+body {
+  background-color: var(--var-body-bg);
+  color: var(--var-body-fc);
+  /* background-image: var(--var-body-bg-img); */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.bodyCentr {
+  text-align: center;
+}
+
+.exit {
+  text-align: center;
+  background-color: Tomato;
+  border-radius: 20px;
+}
+
+.bodyMiniBlockImg {
+  border: solid 0.5px black;
+  border-radius: 0 0 var(--radius-block) var(--radius-block);
+}
+
+
+.news_link {
+  color: var(--var-body-fc);
+}
+
+.imgZone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.viewImg {
+  height: 200px;
+  width: 300px;
+}
+
+/* .viewImgBody{
+  width: 163px;
+  height: 310px;
+} */
+input {
+  /* width: 60%; */
+  border-radius: 8px;
+  padding: 6px;
+  transition: width 0.4s ease-in-out;
+}
+
+/* input[type=text]:focus   {
+  border: 4px solid rgb(135, 133, 246);
+  width: 100%;
+} */
+
+.first_name {
+  display: flex;
+  flex-direction: column;
+}
+
+#fname-e {
+  color: var(--color-text-err);
+  text-align: right;
+}
+
+#lname-e {
+  color: var(--color-text-err);
+  text-align: right;
+}
+
+#login-e {
+  color: var(--color-text-err);
+  text-align: right;
+}
+
+#email-e {
+  color: var(--color-text-err);
+  text-align: right;
+}
+
+#password-e {
+  color: var(--color-text-err);
+  text-align: right;
+}
+
+.last_name {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+}
+
+.globalSite {
+  margin: 10px;
+}
+
+.localSite {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1084px;
+
+}
+
+.headerBlock {
+  border-radius: var(--radius-block);
+  margin-top: 40px;
+  background-color: var(--var-header-block-bg);
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  backdrop-filter: blur(9px);
+}
+
+.theme {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doctor {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  gap: 10px;
+  /* align-items: stretch; */
+}
+
+.doctorTable {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  border: 2px solid rgb(137, 238, 245);
+}
+
+.usersList {
+  width: 200px;
+  border: 3px solid rgb(154, 134, 180);
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* .navigationLink {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+ 
+} */
+
+.bodyBlock {
+  background-color: var(--var-body-block-bg);
+  backdrop-filter: blur(20px);
+  min-height: 800px;
+  border-radius: var(--radius-block);
+}
+
+.footerBlock {
+  background-color: var(--var-footer-block-bg);
+  min-height: 50px;
+  backdrop-filter: blur(9px);
+  border-radius: var(--radius-block);
+}
+
+.text {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}

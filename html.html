@@ -1,0 +1,13 @@
+<div>
+    <a href="?edit_password">Смена пароля</a>
+    <p class="error">
+        <?php echo $_GET['error_edit_password'] ?>
+    </p>
+    <php if (isset($_GET['edit_password']) ){ } <form action="?" method="POST">
+        <div>
+            <label for="edit_password">Введите новый пароль</label>
+            <input type="password" name="edit_password">
+        </div>
+        <input type="submit" value="Изменить">
+        </form>
+</div>
